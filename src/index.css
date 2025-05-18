@@ -1,0 +1,15 @@
+@import "tailwindcss";
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1A1A40;
+  color: white;
+}
+@keyframes ping-slow {
+  75%, 100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+.animate-ping-slow {
+  animation: ping-slow 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
